@@ -1,0 +1,79 @@
+[
+    {
+        "name":"Tatooine",
+        "destinations":["Kamino","Naboo","Nal Hutta"],
+        "image":"tatooine_main.jpeg",
+        "locations":["Cantina","Junkyard","Podracer Garage"],
+        "description": "A harsh desert planet in the Outer Rim controlled by the Hutt clans. The planet also serves as the home of the Boonta Eve Classic Podrace, as well as the hideout for many nefarious criminals."
+    },
+    {
+        "name":"Kamino",
+        "destinations":["Bespin","Naboo","Tatooine"],
+        "image":"kamino_main.jpeg",
+        "locations":["Cloning Lab","Power Plant","Landing Platform"],
+        "description": "A rainy planet covered in endless oceans, Kamino is an Outer Rim world that exports clones. During the Clone Wars, Kamino served as the Republic's main supplier of clone troopers."
+    },
+    {
+        "name":"Bespin",
+        "destinations":["Jedha","Kamino","Naboo"],
+        "image":"bespin_main.jpeg",
+        "locations":["Scrapyard","Administrative Center","Docking Platform"],
+        "description": "A gaseous planet with an economy that revolves around precious gas mining. The most well-known gas mining facility is Cloud City. The gases are produced by giant creatures called Aiwha."
+    },
+    {
+        "name":"Naboo",
+        "destinations":["Bespin","Coruscant","Kamino","Tatooine"],
+        "image":"naboo_main.jpeg",
+        "locations":["Royal Palace","Bazaar","Ferry Docks"],
+        "description": "A planet near the border of the Outer Rim that is inhabited by humans called the Naboo and the indigenous amphibian creatures the Gungans. The cities are constructed with classical architecture."
+    },
+    {
+        "name":"Coruscant",
+        "destinations":["Jakku","Jedha","Naboo","Nal Hutta"],
+        "image":"coruscant_main.jpeg",
+        "locations":["Senate Building","Museum","Slums"],
+        "description": "A city-covered planet that features a diverse mix of citizens and culture. It features towering skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far below the world’s surface."
+    },
+    {
+        "name":"Jedha",
+        "destinations":["Bespin","Coruscant","Krownest"],
+        "image":"jedha_main.jpeg",
+        "locations":["Monastery","Bazaar","Cantina"],
+        "description": "A desert planet chilled by a permanent winter, Jedha was home to the first civilization to show interest in the nature of the Force. During the Galactic Civil War the planet was devastated by an attack from the newly developed Death Star."
+    },
+    {
+        "name":"Nal Hutta",
+        "destinations":["Coruscant","Kashyyyk","Tatooine"],
+        "image":"nalhutta_main.jpeg",
+        "locations":["Casino","Cantina","Black Market"],
+        "description": "A marshy bog planet with a hot atmosphere and greasy rain. Known as a center for criminal activity, the planet is primarily controlled by the Hutt clans. The planet is also home to many dangerous creatures."
+    },
+    {
+        "name":"Kessel",
+        "destinations":["Coruscant","Felucia","Kashyyyk","Krownest"],
+        "image":"kessel_main.jpeg",
+        "locations":["Processing Plant","Mine Shaft","Security Center"],
+        "description": "A noxious mining world where criminals are often sentenced to work in the spice mines. The planet is also a major exporter of unrefined coaxium, a valuable fuel source for starships."
+    },
+    {
+        "name":"Krownest",
+        "destinations":["Felucia","Jedha","Kessel"],
+        "image":"krownest_main.jpeg",
+        "locations":["Wren Stronghold","Barracks","Mandalorian Camp"],
+        "description": "A frigid planet covered in snow and mountains. Krownest is controlled by the Mandalorians, and is goverened by the powerful Wren Clan. Their stronghold is a complex blend of steel, stone and glass."
+    },
+    {
+        "name":"Kashyyyk",
+        "destinations":["Felucia","Kessel","Nal Hutta"],
+        "image":"kashyyyk_main.jpeg",
+        "locations":["Treehouse","Market","Farmhouse"],
+        "description": "A densely forested planet famous for its enormous Wroshyr trees. The planet is populated by the Wookies, who implement sophisticated technology into the trees to make their homes."
+    },
+    {
+        "name":"Felucia",
+        "destinations":["Kashyyyk","Kessel","Krownest"],
+        "image":"felucia_main.jpeg",
+        "locations":["Farmhouse","Stables","Market"],
+        "description": "A jungle planet filled with various kinds of fungal and plant life. Many creatures such as the jungle rancor can be found here. The diverse landscape provides an abundance of crops to be harvested by the planet's many farming villages."
+    }
+]
