@@ -1,33 +1,46 @@
-.App {
+body {
+  background: #000;
+  color: #fff;
+}
+li {
+  list-style-type: none;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#time {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 15px;
+  margin-bottom: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#planetName {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+#planetImage {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+#planetDesc {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+.console {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+#space_port p:hover, #investigate p:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+hr {
+  border-top: 1px solid rgba(255,255,255,1);
+}
+@media screen and (max-width: 991px) {
+  #planetImage img {
+    width: 100%;
   }
 }

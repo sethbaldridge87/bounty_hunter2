@@ -29,7 +29,7 @@
     },
     {
         "name":"Coruscant",
-        "destinations":["Jakku","Jedha","Naboo","Nal Hutta"],
+        "destinations":["Jedha","Kessel","Naboo","Nal Hutta"],
         "image":"coruscant_main.jpeg",
         "locations":["Senate Building","Museum","Slums"],
         "description": "A city-covered planet that features a diverse mix of citizens and culture. It features towering skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far below the world’s surface."
