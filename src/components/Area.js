@@ -6,7 +6,7 @@ function Area(props) {
             <h5>Investigate</h5>
             <hr />
                 {props.places.map(data => (
-                    <p>{data}</p>
+                    <p onClick={(event) => props.investigate({data})} key={data.name} data-id={data}>{data.name}</p>
                 ))}
         </div>
     )

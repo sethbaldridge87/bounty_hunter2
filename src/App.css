@@ -22,6 +22,13 @@ li {
   border: 1px solid #fff;
   padding: 15px;
 }
+#location {
+  border: 1px solid #fff;
+  padding: 15px;
+}
+#location h5 {
+  text-align: center;
+}
 #planetDesc {
   text-align: center;
   border: 1px solid #fff;
