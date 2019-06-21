@@ -6,9 +6,9 @@
         "description": "A harsh desert planet in the Outer Rim controlled by the Hutt clans. The planet also serves as the home of the Boonta Eve Classic Podrace, as well as the hideout for many nefarious criminals.",
         "locations":[
             {
-                "name":"Cantina",
-                "character":"Bartender",
-                "portrait":""
+                "name":"Podracer Garage",
+                "character":"Mechanic",
+                "portrait":"Gall-Trayvis_a24a16c1.webp"
             },
             {
                 "name":"Junkyard",
@@ -16,14 +16,14 @@
                 "portrait":""
             },
             {
-                "name":"Podracer Garage",
-                "character":"Mechanic",
+                "name":"Cantina",
+                "character":"Bartender",
                 "portrait":""
             }
         ],
         "dialogue":[
             {
-                "clue":"He told me he had a tip on the Boonta Eve race that he was going to put big money on.",
+                "clue":"He mentioned something about a deal he had made with the Hutts.",
                 "unknown":"I'm afraid I haven't seen anyone like that around here."
             },
             {
@@ -31,7 +31,7 @@
                 "unknown":"Sorry, no one like that has come through here."
             },
             {
-                "clue":"He mentioned something a deal he had made with the Hutts.",
+                "clue":"He told me he had a tip on the Boonta Eve race that he was going to put big money on.",
                 "unknown":"Haven't seen who you're looking for. Now get lost."
             }
         ]
@@ -80,13 +80,13 @@
         "description": "A gaseous planet with an economy that revolves around precious gas mining. The most well-known gas mining facility is Cloud City. The gases are produced by giant creatures called Aiwha.",
         "locations":[
             {
-                "name":"Scrapyard",
-                "character":"Ugnaught",
+                "name":"Administrative Center",
+                "character":"Security Guard",
                 "portrait":""
             },
             {
-                "name":"Administrative Center",
-                "character":"Security Guard",
+                "name":"Scrapyard",
+                "character":"Ugnaught",
                 "portrait":""
             },
             {
@@ -138,11 +138,11 @@
                 "unknown":"I'm afraid I haven't seen anyone like that around here."
             },
             {
-                "clue":"He mentioned something about a tip from some Gungan smugglers he wanted to follow up on.",
+                "clue":"He was looking to buy some scuba gear that could offer protection from hostile sea creatures.",
                 "unknown":"Sorry, no one like that has come through here."
             },
             {
-                "clue":"He was looking to buy some scuba gear that could offer protection from hostile sea creatures.",
+                "clue":"He mentioned something about a tip from some Gungan smugglers he wanted to follow up on.",
                 "unknown":"Haven't seen who you're looking for. Now get lost."
             }
         ]
@@ -233,13 +233,13 @@
                 "portrait":""
             },
             {
-                "name":"Cantina",
-                "character":"Assassin",
+                "name":"Black Market",
+                "character":"Pickpocket",
                 "portrait":""
             },
             {
-                "name":"Black Market",
-                "character":"Pickpocket",
+                "name":"Cantina",
+                "character":"Assassin",
                 "portrait":""
             }
         ],
@@ -253,7 +253,7 @@
                 "unknown":"Sorry, no one like that has come through here."
             },
             {
-                "clue":"He wanted weapons that could protect him from dangerous creatures.",
+                "clue":"He seemed very interested in making new criminal contacts in the black market.",
                 "unknown":"Haven't seen who you're looking for. Now get lost."
             }
         ]
@@ -266,18 +266,18 @@
         "locations":[
             {
                 "name":"Processing Plant",
-                "character":"Scientist",
-                "portrait":""
+                "character":"Pyke Agent",
+                "portrait":"pyke.jpg"
             },
             {
                 "name":"Mine Shaft",
                 "character":"Worker",
-                "portrait":""
+                "portrait":"worker.jpg"
             },
             {
                 "name":"Security Center",
                 "character":"Pyke Agent",
-                "portrait":""
+                "portrait":"guard.jpg"
             }
         ],
         "dialogue":[
@@ -304,17 +304,17 @@
             {
                 "name":"Wren Stronghold",
                 "character":"Mandalorian Guard",
-                "portrait":""
+                "portrait":"wren.jpg"
             },
             {
                 "name":"Barracks",
                 "character":"Mandalorian Soldier",
-                "portrait":""
+                "portrait":"wren2.jpg"
             },
             {
                 "name":"Mandalorian Camp",
-                "character":"Mandalorian Pilot",
-                "portrait":""
+                "character":"Death Watch Agent",
+                "portrait":"deathwatch.jpg"
             }
         ],
         "dialogue":[
@@ -341,17 +341,17 @@
             {
                 "name":"Treehouse",
                 "character":"Wookie Carpenter",
-                "portrait":""
-            },
-            {
-                "name":"Market",
-                "character":"Tourist",
-                "portrait":""
+                "portrait":"wookie.jpg"
             },
             {
                 "name":"Farmhouse",
                 "character":"Wookie Farmer",
-                "portrait":""
+                "portrait":"wookie2.jpg"
+            },
+            {
+                "name":"Market",
+                "character":"Spy",
+                "portrait":"spy.jpg"
             }
         ],
         "dialogue":[
@@ -378,17 +378,17 @@
             {
                 "name":"Farmhouse",
                 "character":"Farmer",
-                "portrait":""
+                "portrait":"felucian.jpg"
             },
             {
                 "name":"Stables",
                 "character":"Farm Hand",
-                "portrait":""
+                "portrait":"felucian2.jpg"
             },
             {
                 "name":"Market",
                 "character":"Trader",
-                "portrait":""
+                "portrait":"merchant1.jpg"
             }
         ],
         "dialogue":[
