@@ -8,17 +8,17 @@
             {
                 "name":"Podracer Garage",
                 "character":"Mechanic",
-                "portrait":"Gall-Trayvis_a24a16c1.webp"
+                "portrait":"podracer.jpg"
             },
             {
                 "name":"Junkyard",
                 "character":"Scrap Merchant",
-                "portrait":""
+                "portrait":"merchant3.jpg"
             },
             {
                 "name":"Cantina",
                 "character":"Bartender",
-                "portrait":""
+                "portrait":"bartender.jpg"
             }
         ],
         "dialogue":[
@@ -45,17 +45,17 @@
             {
                 "name":"Cloning Lab",
                 "character":"Kaminoan Scientist",
-                "portrait":""
+                "portrait":"kaminoan.jpg"
             },
             {
                 "name":"Power Plant",
                 "character":"Clone Veteran",
-                "portrait":""
+                "portrait":"veteran.jpg"
             },
             {
                 "name":"Landing Platform",
                 "character":"Clone Officer",
-                "portrait":""
+                "portrait":"officer.jpg"
             }
         ],
         "dialogue":[
@@ -82,17 +82,17 @@
             {
                 "name":"Administrative Center",
                 "character":"Security Guard",
-                "portrait":""
+                "portrait":"guard3.jpg"
             },
             {
                 "name":"Scrapyard",
                 "character":"Ugnaught",
-                "portrait":""
+                "portrait":"ugnaught.jpg"
             },
             {
                 "name":"Docking Platform",
                 "character":"Dock Worker",
-                "portrait":""
+                "portrait":"worker2.jpg"
             }
         ],
         "dialogue":[
@@ -119,17 +119,17 @@
             {
                 "name":"Royal Palace",
                 "character":"Royal Guard",
-                "portrait":""
+                "portrait":"guard2.jpg"
             },
             {
                 "name":"Bazaar",
                 "character":"Merchant",
-                "portrait":""
+                "portrait":"merchant2.jpg"
             },
             {
                 "name":"Ferry Docks",
                 "character":"Fisherman",
-                "portrait":""
+                "portrait":"fisherman.jpg"
             } 
         ],
         "dialogue":[
@@ -156,17 +156,17 @@
             {
                 "name":"Senate Building",
                 "character":"Senate Assistant",
-                "portrait":""
+                "portrait":"assistant.jpg"
             },
             {
                 "name":"Museum",
                 "character":"Curator",
-                "portrait":""
+                "portrait":"curator.jpg"
             },
             {
                 "name":"Slums",
                 "character":"Smuggler",
-                "portrait":""
+                "portrait":"smuggler.jpg"
             }
         ],
         "dialogue":[
@@ -193,17 +193,17 @@
             {
                 "name":"Monastery",
                 "character":"Pilgrim",
-                "portrait":""
+                "portrait":"pilgrim.jpg"
             },
             {
                 "name":"Bazaar",
                 "character":"Trader",
-                "portrait":""
+                "portrait":"trader.jpg"
             },
             {
                 "name":"Cantina",
                 "character":"Traveler",
-                "portrait":""
+                "portrait":"traveler.jpg"
             }
         ],
         "dialogue":[
@@ -230,17 +230,17 @@
             {
                 "name":"Casino",
                 "character":"Gambler",
-                "portrait":""
+                "portrait":"gambler.jpg"
             },
             {
                 "name":"Black Market",
                 "character":"Pickpocket",
-                "portrait":""
+                "portrait":"pickpocket.jpg"
             },
             {
                 "name":"Cantina",
                 "character":"Assassin",
-                "portrait":""
+                "portrait":"assassin.jpg"
             }
         ],
         "dialogue":[

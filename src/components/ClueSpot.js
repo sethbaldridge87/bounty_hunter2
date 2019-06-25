@@ -2,7 +2,7 @@ import React from 'react';
 
 function ClueSpot(props) {
     return (
-        <div id="location" className="container">
+        <div id="location" className="container console">
             <h5>{props.data.name}</h5>
             <div class="row">
                 <div className="col-sm-3">
