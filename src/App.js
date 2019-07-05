@@ -23,7 +23,7 @@ class App extends React.Component {
     var setPlanet = (planetData) => {
       let options = [];
       for (let i = 0; i < planetData.destinations.length; i++) {
-        if (planetData.destinations[i] !== initialPlanet.name) {
+        if (planetData.destinations[i] !== initialPlanet.name && planetData.destinations[i] !== secondPlanet.name) {
           options.push(planetData.destinations[i]);
         }
       }
@@ -33,13 +33,13 @@ class App extends React.Component {
           newPlanet = planet_list[z];
         }
       }
-      // SOLVE DUPLICATE PROBLEM!
       return newPlanet;
     }
     let thirdPlanet = setPlanet(secondPlanet);
     let fourthPlanet = setPlanet(thirdPlanet);
     let nextPlanet = secondPlanet;
-
+    let lastStop = Math.floor(Math.random() * fourthPlanet.locations.length);
+    lastStop = fourthPlanet.locations[lastStop];
     super(props);
     this.state = {
       planets: planet_list,
@@ -54,25 +54,33 @@ class App extends React.Component {
       onTrack: true,
       current_dialogue: "",
       investigate: false,
-      finalPlanet: false
-      // deprecated_planets: initialUsed
+      finalPlanet: false,
+      hideout: lastStop
     }
+    console.log(this.state.current_planet.name);
     console.log('next planets are ' + this.state.second_planet.name + ', ' + this.state.third_planet.name + ', ' + this.state.fourth_planet.name);
-    
   }
 
   newPlanet = (planetName) => {
     this.setState({investigate:false})
     for (let i = 0; i < planet_list.length; i ++) {
       if (planet_list[i].name === planetName) {
+        this.setState({finalPlanet: false});
         this.setState({current_planet: planet_list[i]}, () => {
-          if (this.state.current_planet === this.state.second_planet) {
+          if (this.state.current_planet === this.state.first_planet) {
+            this.setState({onTrack:true});
+            this.setState({next_planet: this.state.second_planet});
+          } else if (this.state.current_planet === this.state.second_planet) {
+            this.setState({onTrack:true});
             this.setState({next_planet: this.state.third_planet});
           } else if (this.state.current_planet === this.state.third_planet) {
+            this.setState({onTrack:true});
             this.setState({next_planet: this.state.fourth_planet});
           } else if (this.state.current_planet === this.state.fourth_planet) {
+              this.setState({onTrack:true});
               this.setState({finalPlanet: true});
               console.log('Target found');
+              console.log(this.state.hideout);
           } else {
             this.setState({onTrack:false})
             console.log('incorrect');
@@ -85,9 +93,7 @@ class App extends React.Component {
   investigate = (locale) => {
     let arrayKey;
     let clueText;
-    // console.log(locale.data);
     for (let i = 0; i < this.state.current_planet.locations.length; i++) {
-      // console.log(this.state.current_planet.locations[i]);
       if (this.state.current_planet.locations[i].name === locale.data.name) {
         arrayKey = i;
       }
@@ -96,14 +102,21 @@ class App extends React.Component {
       investigate:true,
       current_locale:locale.data
     });
+    if (this.state.current_locale === this.state.hideout) {
+      alert("There he is!");
+    }
     if (this.state.onTrack === true) {
-      clueText = this.state.next_planet.dialogue[arrayKey].clue;
+      if (this.state.finalPlanet === true) {
+        clueText = this.state.next_planet.dialogue[arrayKey].final;
+      } else {
+        clueText = this.state.next_planet.dialogue[arrayKey].clue;
+      }
     } else {
       clueText = this.state.next_planet.dialogue[arrayKey].unknown;
     }
     this.setState({
         current_dialogue: clueText
-      })
+    });
   }
   
   render() {
@@ -120,7 +133,7 @@ class App extends React.Component {
           <PlanetDesc 
             text={this.state.current_planet.description}
           />
-          <div className="container">
+          <div className="container" id="mainScreens">
             <div className="row">
               <Area 
                 places={this.state.current_planet.locations}
@@ -137,13 +150,6 @@ class App extends React.Component {
         </div>
       )
     } else {
-      // let speech;
-      // if (this.state.onTrack === true) {
-      //   speech = this.state.next_planet.dialogue;
-      // } else {
-      //   speech = this.state.next_planet.dialogue;
-      // }
-      // console.log(speech);
       return (
         <div>
           <Time />
@@ -179,51 +185,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-  // newPlanet = (planetName) => {
-  //   this.setState({previous_planet: this.state.current_planet});
-  //   for (let i = 0; i < planet_list.length; i++) {
-  //     if (planet_list[i].name === planetName) {
-  //       this.setState({current_planet: planet_list[i]}, () => {
-  //         if (planetName === this.state.next_planet.name) {
-  //           let options = [];
-  //           for(let z = 0; z < this.state.current_planet.destinations.length; z++) {
-  //             options.push(this.state.current_planet.destinations[z]);
-  //           }
-  //           for (let i = 0; i < this.state.deprecated_planets.length; i++) {
-  //             for (let y = 0; y < options.length; y++) {
-  //               if (this.state.deprecated_planets[i] === options[y]) {
-  //                 options.splice(y, 1);
-  //               }
-  //             }
-  //           }
-  //           console.log(options);
-  //           let nextPlanet = Math.floor(Math.random() * options.length);
-  //           nextPlanet = this.state.current_planet.destinations[nextPlanet];
-  //           for (let i = 0; i < planet_list.length; i++) {
-  //             if (planet_list[i].name === nextPlanet) {
-  //               this.setState({next_planet: planet_list[i]}, () => {
-  //                 console.log('next planet is ' + nextPlanet);
-  //                 let usedPlanets = [];
-  //                 for (let i = 0; i < this.state.current_planet.destinations.length; i++) {
-  //                   if (this.state.current_planet.destinations[i] !== this.state.next_planet.name) {
-  //                     usedPlanets.push(this.state.current_planet.destinations[i]);
-  //                   }
-  //                 }
-  //                 // console.log(usedPlanets);
-  //                 let otherUsedPlanets = this.state.deprecated_planets;
-  //                 // console.log(otherUsedPlanets);
-  //                 let allUsedPlanets = usedPlanets.concat(otherUsedPlanets);
-  //                 // console.log(allUsedPlanets);
-  //                 this.setState({deprecated_planets: allUsedPlanets});
-  //               });
-  //             }
-  //           }
-            
-  //         } else {
-  //           console.log('incorrect');
-  //         }
-  //       });
-  //     }
-  //   }   
-  // }

@@ -24,15 +24,18 @@
         "dialogue":[
             {
                 "clue":"He mentioned something about a deal he had made with the Hutts.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He asked for tips on keeping sand out of your clothes.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He told me he had a tip on the Boonta Eve race that he was going to put big money on.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -61,15 +64,18 @@
         "dialogue":[
             {
                 "clue":"He said he was going to need an umbrella where's he headed.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He said he was headed for the Outer Rim.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"The planet he's headed to is controlled by the Republic.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -98,15 +104,18 @@
         "dialogue":[
             {
                 "clue":"He said that he may not be sleeping on solid ground for a while.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He mentioned that seeing a live Aiwha was an item on his bucket list.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He asked about the current market prices of Tibanna gas.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -135,15 +144,18 @@
         "dialogue":[
             {
                 "clue":"He seemed to have an interest in classical architecture.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He was looking to buy some scuba gear that could offer protection from hostile sea creatures.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He mentioned something about a tip from some Gungan smugglers he wanted to follow up on.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -172,15 +184,18 @@
         "dialogue":[
             {
                 "clue":"He said he was looking forward to being back in a big city.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He mentioned he was thinking about taking a museum tour at his next destination.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He asked for tips on avoiding being questioned by Republic government officials.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -209,15 +224,18 @@
         "dialogue":[
             {
                 "clue":"Apparently he was headed someplace with a strong heritage around the Jedi.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He said he was heading to a cold planet, but not a snowy one.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He was asking if I knew anyone in the black market that sold kyber crystals.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -246,15 +264,18 @@
         "dialogue":[
             {
                 "clue":"He asked for advice on meeting Hutts.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He asked where he could find boots that could keep out swamp water.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He seemed very interested in making new criminal contacts in the black market.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -283,15 +304,18 @@
         "dialogue":[
             {
                 "clue":"He asked about the price of unrefined spice.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He asked for an introduction to the Pykes.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He said he was going to look into a tip on a big coaxium score.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -320,15 +344,18 @@
         "dialogue":[
             {
                 "clue":"He asked for a book on the Mandalorian language.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He said he needed clothes that would protect him from the snow.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He was asking if anyone had any dirt on the Wren clan.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -357,15 +384,18 @@
         "dialogue":[
             {
                 "clue":"He asked about the best ways to deal with Wookies.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He asked for equipment specifically for climbing trees.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He seemed interested in the illegal Wroshyr sap trade.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     },
@@ -394,15 +424,18 @@
         "dialogue":[
             {
                 "clue":"He mentioned he was interesting in learning about the most valuable specimens of plant life.",
-                "unknown":"I'm afraid I haven't seen anyone like that around here."
+                "unknown":"I'm afraid I haven't seen anyone like that around here.",
+                "final": "There's something very suspicious happening around here."
             },
             {
                 "clue":"He asked about equipment for traversing jungles.",
-                "unknown":"Sorry, no one like that has come through here."
+                "unknown":"Sorry, no one like that has come through here.",
+                "final":"I just saw who you're looking for! Your target is onworld!"
             },
             {
                 "clue":"He was asking if any farmers were interested in harboring fugutives.",
-                "unknown":"Haven't seen who you're looking for. Now get lost."
+                "unknown":"Haven't seen who you're looking for. Now get lost.",
+                "final":"You're close. You've almost found the scum."
             }
         ]
     }
