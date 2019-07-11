@@ -438,5 +438,45 @@
                 "final":"You're close. You've almost found the scum."
             }
         ]
+    },
+    {
+        "name":"Traveling...",
+        "destinations":["","",""],
+        "image":"hyperspace3.gif",
+        "description": "Approaching Destination...",
+        "locations":[
+            {
+                "name":"",
+                "character":"",
+                "portrait":""
+            },
+            {
+                "name":"",
+                "character":"",
+                "portrait":""
+            },
+            {
+                "name":"",
+                "character":"",
+                "portrait":""
+            }
+        ],
+        "dialogue":[
+            {
+                "clue":"",
+                "unknown":"",
+                "final": ""
+            },
+            {
+                "clue":"",
+                "unknown":"",
+                "final":""
+            },
+            {
+                "clue":"",
+                "unknown":"",
+                "final":""
+            }
+        ]
     }
 ]

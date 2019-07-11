@@ -8,6 +8,8 @@ import Area from './components/Area.js';
 import Spaceport from './components/Spaceport.js';
 import ClueSpot from './components/ClueSpot.js';
 import Guild from './components/Guild.js';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import './App.css';
 
 class App extends React.Component {
@@ -41,6 +43,8 @@ class App extends React.Component {
     let lastStop = Math.floor(Math.random() * fourthPlanet.locations.length);
     lastStop = fourthPlanet.locations[lastStop];
     super(props);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
     this.state = {
       planets: planet_list,
       current_planet: initialPlanet,
@@ -55,39 +59,58 @@ class App extends React.Component {
       current_dialogue: "",
       investigate: false,
       finalPlanet: false,
-      hideout: lastStop
+      hideout: lastStop,
+      show: false,
+      intro: true
     }
-    console.log(this.state.current_planet.name);
-    console.log('next planets are ' + this.state.second_planet.name + ', ' + this.state.third_planet.name + ', ' + this.state.fourth_planet.name);
+    // console.log(this.state.current_planet.name);
+    // console.log('next planets are ' + this.state.second_planet.name + ', ' + this.state.third_planet.name + ', ' + this.state.fourth_planet.name);
   }
 
+  handleClose() {
+    this.setState({ show: false });
+  }
+
+  handleShow() {
+    this.setState({ show: true });
+  }
+  componentDidMount(){
+    this.handleShow();
+  }
   newPlanet = (planetName) => {
-    this.setState({investigate:false})
-    for (let i = 0; i < planet_list.length; i ++) {
-      if (planet_list[i].name === planetName) {
-        this.setState({finalPlanet: false});
-        this.setState({current_planet: planet_list[i]}, () => {
-          if (this.state.current_planet === this.state.first_planet) {
-            this.setState({onTrack:true});
-            this.setState({next_planet: this.state.second_planet});
-          } else if (this.state.current_planet === this.state.second_planet) {
-            this.setState({onTrack:true});
-            this.setState({next_planet: this.state.third_planet});
-          } else if (this.state.current_planet === this.state.third_planet) {
-            this.setState({onTrack:true});
-            this.setState({next_planet: this.state.fourth_planet});
-          } else if (this.state.current_planet === this.state.fourth_planet) {
-              this.setState({onTrack:true});
-              this.setState({finalPlanet: true});
-              console.log('Target found');
-              console.log(this.state.hideout);
-          } else {
-            this.setState({onTrack:false})
-            console.log('incorrect');
+    this.setState({investigate:false});
+    this.setState({current_planet: planet_list[11]});
+    console.log(planet_list[11]);
+    setTimeout(
+      function() {
+        for (let i = 0; i < planet_list.length; i ++) {
+          if (planet_list[i].name === planetName) {
+            this.setState({finalPlanet: false});
+            this.setState({current_planet: planet_list[i]}, () => {
+              if (this.state.current_planet === this.state.first_planet) {
+                this.setState({onTrack:true});
+                this.setState({next_planet: this.state.second_planet});
+              } else if (this.state.current_planet === this.state.second_planet) {
+                this.setState({onTrack:true});
+                this.setState({next_planet: this.state.third_planet});
+              } else if (this.state.current_planet === this.state.third_planet) {
+                this.setState({onTrack:true});
+                this.setState({next_planet: this.state.fourth_planet});
+              } else if (this.state.current_planet === this.state.fourth_planet) {
+                this.setState({onTrack:true});
+                this.setState({finalPlanet: true});
+                console.log('Target found');
+                console.log(this.state.hideout);
+              } else {
+                this.setState({onTrack:false})
+                console.log('incorrect');
+              }
+            });
           }
-        });
-      }
-    }
+        }
+      }.bind(this),3000
+    );
+
   }
 
   investigate = (locale) => {
@@ -118,11 +141,20 @@ class App extends React.Component {
         current_dialogue: clueText
     });
   }
-  
   render() {
     if (this.state.investigate === false) {
       return (
         <div>
+          <Modal show={this.state.show} onHide={this.handleClose}>
+            <Modal.Body>
+              Attention bounty hunter! You have been hired by the Galactic Republic to recover a valuable item that has been stolen. Your target was last seen on the planet {this.state.first_planet.name}. Investigate the planet and find clues to help you determine where your target has fled. Continue to follow their trail until you find them! <br></br><br></br>Good luck!
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
           <Time />
           <PlanetName 
             name={this.state.current_planet.name}
