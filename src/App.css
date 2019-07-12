@@ -40,7 +40,7 @@ li {
   margin-bottom: 50px;
 }
 #space_port p:hover, #investigate p:hover {
-  color: red;
+  color: rgb(253, 31, 31);
   cursor: pointer;
 }
 hr {

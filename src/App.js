@@ -49,7 +49,6 @@ class App extends React.Component {
       planets: planet_list,
       current_planet: initialPlanet,
       current_locale: "",
-      previous_planet: "",
       first_planet: initialPlanet,
       second_planet: secondPlanet,
       third_planet: thirdPlanet,
@@ -61,26 +60,32 @@ class App extends React.Component {
       finalPlanet: false,
       hideout: lastStop,
       show: false,
-      intro: true
+      victory: false
     }
-    // console.log(this.state.current_planet.name);
-    // console.log('next planets are ' + this.state.second_planet.name + ', ' + this.state.third_planet.name + ', ' + this.state.fourth_planet.name);
   }
-
+  gameSetup = () => {
+    console.log('Game is being setup');
+  }
   handleClose() {
     this.setState({ show: false });
+    if (this.state.victory === true) {
+      console.log("You've won the game!");
+      this.gameSetup();
+    }
   }
 
   handleShow() {
     this.setState({ show: true });
   }
+
   componentDidMount(){
     this.handleShow();
+    this.gameSetup();
   }
+  
   newPlanet = (planetName) => {
     this.setState({investigate:false});
     this.setState({current_planet: planet_list[11]});
-    console.log(planet_list[11]);
     setTimeout(
       function() {
         for (let i = 0; i < planet_list.length; i ++) {
@@ -99,18 +104,14 @@ class App extends React.Component {
               } else if (this.state.current_planet === this.state.fourth_planet) {
                 this.setState({onTrack:true});
                 this.setState({finalPlanet: true});
-                console.log('Target found');
-                console.log(this.state.hideout);
               } else {
-                this.setState({onTrack:false})
-                console.log('incorrect');
+                this.setState({onTrack:false});
               }
             });
           }
         }
       }.bind(this),3000
     );
-
   }
 
   investigate = (locale) => {
@@ -124,10 +125,16 @@ class App extends React.Component {
     this.setState({
       investigate:true,
       current_locale:locale.data
+    }, () => {
+      if (this.state.current_locale === this.state.hideout) {
+        // Target
+        this.handleShow();
+        this.setState({
+          victory: true
+        });
+      }
     });
-    if (this.state.current_locale === this.state.hideout) {
-      alert("There he is!");
-    }
+    
     if (this.state.onTrack === true) {
       if (this.state.finalPlanet === true) {
         clueText = this.state.next_planet.dialogue[arrayKey].final;
@@ -184,6 +191,16 @@ class App extends React.Component {
     } else {
       return (
         <div>
+          <Modal show={this.state.show} onHide={this.handleClose}>
+            <Modal.Body>
+              Congratulations! You have successfully tracked down and apprehended the criminal! You can collect your credits at the local Bounty Hunter's Guild chapter.
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
           <Time />
           <PlanetName 
             name={this.state.current_planet.name}
